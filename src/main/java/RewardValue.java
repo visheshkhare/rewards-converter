@@ -3,7 +3,7 @@ public class RewardValue {
     private double milesValue;
 
     // Constructor accepting cash value
-    public RewardValue() {
+    public RewardValue(double cashValue) {
         this.cashValue = cashValue;
         this.milesValue = cashToMiles(cashValue);
     }
@@ -32,9 +32,5 @@ public class RewardValue {
     // Method to get the miles value
     public double getMilesValue() {
         return milesValue;
-    }
-
-    public double calculateMilesFromCash(double cashAmount) {
-        return 0;
     }
 }
